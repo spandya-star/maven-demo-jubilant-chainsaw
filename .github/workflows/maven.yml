@@ -20,9 +20,3 @@ jobs:
         java-version: 11
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-
-    - name: Approve Pull request
-      uses: juliangruber/approve-pull-request-action@v1
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        number: 1
